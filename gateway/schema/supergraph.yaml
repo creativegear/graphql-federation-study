@@ -1,0 +1,26 @@
+federation_version: =2.7.1
+subgraphs:
+  customer:
+    routing_url: http://customer
+    schema:
+      file: ../../micro-services/customer/graphql/generated-schema.graphql
+  store:
+    routing_url: http://store
+    schema:
+      file: ../../micro-services/store/graphql/generated-schema.graphql
+  product:
+    routing_url: http://product
+    schema:
+      file: ../../micro-services/product/graphql/generated-schema.graphql
+  purchase:
+    routing_url: http://purchase
+    schema:
+      file: ../../micro-services/purchase/graphql/generated-schema.graphql
+  delivery:
+    routing_url: http://delivery
+    schema:
+      file: ../../micro-services/delivery/graphql/generated-schema.graphql
+  node:
+    routing_url: http://node
+    schema:
+      file: ../../micro-services/node/graphql/generated-schema.graphql

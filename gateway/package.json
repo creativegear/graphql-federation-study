@@ -1,0 +1,35 @@
+{
+  "name": "@gql-federation-study/gateway",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --exit-child --respawn --require dotenv/config src/main.ts",
+    "check": "tsc --noEmit",
+    "build": "tsc --build --clean && tsc --build",
+    "test": "vitest --config vitest.config.ts",
+    "test:run": "vitest run --config vitest.config.ts",
+    "lint:check": "biome lint src",
+    "lint:fix": "biome lint --apply src",
+    "lint:fix:force": "biome lint --apply-unsafe src",
+    "format:check": "biome format src",
+    "format:fix": "biome format src --write",
+    "compose-supergraph": "rover supergraph compose --elv2-license accept --config ./schema/supergraph.yaml --output ./schema/supergraph.graphqls && ts-node-dev ./generate-schema.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "customer-subgraph": "@gql-federation-study/customer-graphql",
+    "product-subgraph": "@gql-federation-study/product-graphql",
+    "purchase-subgraph": "@gql-federation-study/purchase-graphql",
+    "delivery-subgraph": "@gql-federation-study/delivery-graphql",
+    "node-subgraph": "@gql-federation-study/node-graphql",
+    "cors": "^2.8.5",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@apollo/rover": "^0.23.0",
+    "@types/cors": "^2.8.17"
+  },
+  "description": ""
+}

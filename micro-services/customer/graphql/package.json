@@ -1,0 +1,28 @@
+{
+    "name": "@gql-federation-study/customer-graphql",
+    "version": "1.0.0",
+    "private": true,
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+    "dev": "ts-node-dev --exit-child --respawn --require dotenv/config src/main.ts",
+      "check": "tsc --noEmit",
+      "build": "tsc --build --clean && tsc --build",
+      "watch": "tsc --watch",
+      "test": "vitest --config vitest.config.ts",
+      "test:run": "vitest run --config vitest.config.ts",
+      "lint:check": "biome lint src",
+      "lint:fix": "biome lint --apply src",
+      "lint:fix:force": "biome lint --apply-unsafe src",
+      "format:check": "biome format src",
+      "format:fix": "biome format src --write"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+    },
+    "devDependencies": {
+    },
+    "description": ""
+  }
