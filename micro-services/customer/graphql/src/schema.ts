@@ -44,6 +44,11 @@ const resolvers = {
       return dummyAddress1
     },
   },
+  Delivery: {
+    address: async (_customer: { id: string }, _args: unknown, _context: unknown) => {
+      return dummyAddress1
+    },
+  },
   Query: {
     viewer: async (_parent: unknown, _args: { id: string }, _context: unknown) => {
       return dummyCustomer

@@ -8,7 +8,7 @@ type Customer implements Node @key(fields: "id") {
   id: ID!
   name: String!
   email: String!
-  addressess: [Address!]!
+  addresses: [Address!]!
 }
 
 type Address implements Node @key(fields: "id") {

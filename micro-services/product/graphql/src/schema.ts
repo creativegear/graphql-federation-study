@@ -26,7 +26,6 @@ const dummyProduct3 = {
   stock: 30,
 }
 
-
 const resolvers = {
   ScalarName: scalarResolvers,
   Product: {

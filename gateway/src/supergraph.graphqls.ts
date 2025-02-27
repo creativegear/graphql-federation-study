@@ -1,4 +1,3 @@
-
 export const graphqlSchema = `
 schema
   @link(url: "https://specs.apollo.dev/link/v1.0")
@@ -120,7 +119,7 @@ type Customer implements Node
   id: ID! @join__field(graph: CUSTOMER) @join__field(graph: NODE) @join__field(graph: PURCHASE, external: true)
   name: String! @join__field(graph: CUSTOMER)
   email: String! @join__field(graph: CUSTOMER)
-  addressess: [Address!]! @join__field(graph: CUSTOMER)
+  addresses: [Address!]! @join__field(graph: CUSTOMER)
   purchases: [Purchase!]! @join__field(graph: PURCHASE)
 }
 
@@ -919,4 +918,4 @@ scalar Void
   @join__type(graph: PRODUCT)
   @join__type(graph: PURCHASE)
   @join__type(graph: STORE)    
-`;
+`

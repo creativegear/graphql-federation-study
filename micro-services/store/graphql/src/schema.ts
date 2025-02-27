@@ -10,12 +10,12 @@ const dummyStore = {
   name: "品川店",
 }
 
-const dummyStore2 = {
+const _dummyStore2 = {
   id: "st:2",
   name: "渋谷店",
 }
 
-const dummyStore3 = {
+const _dummyStore3 = {
   id: "st:3",
   name: "新宿店",
 }
